@@ -1,5 +1,4 @@
-# Agenda
-## September 2017
+# Agenda: September 2017
 
 ## Introduction
 - Dynamo User Group founded in Feb 2017
