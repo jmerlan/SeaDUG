@@ -9,16 +9,16 @@
 
 ## Thank you’s
 - Last Month
-    - LMN and Anastasia
+    - LMN and Anastasia Krasnoslob­odtseva
     - Trent Best
-        - Dynamo graphs uploaded to GitHub
+        - Dynamo graphs uploaded to GitHub: https://github.com/jmerlan/SeaDUG/tree/master/2017-08%20-%20Trent%20Best
 - This month
     - Stantec
     - Ben Fitch
 
 ## News
 - Looking for another organizer
-    - Lauren was promoted to PM, too busy for now
+    - Congrats to Laurenwho was promoted to PM, however too busy to help with SeaDUG
 - Ideas for a permanent venue?
 - Idea: Monthly beginner training sessions
     - Lesson learned from LMN in August, ~ 60 attendees, 90% beginners
