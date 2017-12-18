@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Dynamo Web Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://rawgit.com/louisremi/jquery-smartresize/master/jquery.throttledresize.js"></script>
+<script src="https://www.google.com/jsapi?ext.js"></script>
+
+<script type="text/javascript">
+google.load("visualization", "1", {
+    packages: ["corechart"]
+});
+google.setOnLoadCallback(initChart);
+
+$(window).on("throttledresize", function (event) {
+    initChart();
+});
+
+
+
+
+function initChart() {
+    var options = {width: '100%', height: '100%', legend: {position: 'bottom'}, pieSliceText: 'percentage', chartArea: {left: '3%',top: '3%', height: '94%', width: '94%'}    };
+var data = google.visualization.arrayToDataTable([['Key','Value'],
+['_Schematic_10 in.',1],
+['_Schematic_6 in.',23],
+['C1010-Interior_Furring_(P-3)_NR_4 1/4 in.',17],
+['C1010-Interior_Furring_(R-1)_NR_2 7/8',1],
+['C1010-Interior_Furring_(Q-4)_NR_4 5/8 in.',3],
+['Slat Wall',1],
+['C1010-Interior_Rated_(M24)_2 HR_6 1/2 in.',13],
+['Glass Clear',14],
+['C1010-Interior_Partition_(B-4)_NR_5 1/4 in.',13],
+['C1010-Interior_Rated_(M28)_2 HR_10 1/2 in.',3],
+['C1010-Interior_Furring_(R-4)_NR_5 1/4 in.',8],
+['C1010-Interior_Furring_(P-2)_NR_3 1/8 in.',5],
+['C1010-Interior_Furring_(P-0)_NR_1 1/2 in.',2],
+['C1010-Interior_Partition_(A-8)_NR_9 1/4 in.',5],
+['C1010-Interior_Furring_(O--)_NR_5/8 in.',1],
+['_Schematic_5 in.',84],
+['Interior MuraFlex',13],
+['_Schematic-Exterior 5 in.',9],
+['C1010-Interior_Partition_(F-4)_NR_5 7/8 in.',60],
+['C1010-Interior_Furring_(P-6)_NR_6 5/8 in.',5],
+['2 in. x 4 in. Wood Slat Wall',2],
+['None',1],
+['C1010-Interior_Rated_(R26)_2 HR_7 1/4 in.',1],
+['C1010-Interior_Partition_(F-6)_NR_7 7/8 in.',1],
+['C1010-Interior_Furring_(P-1)_NR_2 1/4 in.',31],
+['C1010-Interior_Partition_(A-4)_NR_5 1/4 in.',388],
+['C1010-Interior_Furring_(P-4)_NR_4 5/8 in.',184],
+['_Schematic_4 in.',19],
+['C1010-Interior_Partition_(A-6)_NR_7 1/4 in.',10],
+['C1010-Interior_Shaftwall_(T24)_2 HR_5 1/4 in.',12]
+    ]);
+    drawChart(data, options)
+}
+
+function drawChart(data, options) {
+    var chart = new google.visualization.PieChart(document.getElementById('chart'));
+    chart.draw(data, options);
+}
+</script>
+<style>
+#chart_wrap {
+    position: relative;
+    padding-bottom: 100%;
+    overflow:hidden;
+}
+#chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+</style>
+</head>
+<body>
+<div class="container-fixed">
+<div id="chart_wrap"><div id="chart"></div></div>
+<p id="canvas_size"></p>
+</div>
+</body>
+</html>

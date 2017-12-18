@@ -1,0 +1,43 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Square Footage');
+      data.addRows([
+[new Date(2016, 01, 20), 591004],
+[new Date(2016, 06, 19), 723171],
+[new Date(2016, 08, 04), 697984],
+[new Date(2016, 12, 28), 755880]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Floor Square Footage',
+          subtitle: 'Over Time'
+        },
+        width: 900,
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+<body>
+  <div id="line_top_x"></div>
+</body>
+</html>

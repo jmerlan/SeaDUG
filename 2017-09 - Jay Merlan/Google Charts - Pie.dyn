@@ -1,0 +1,63 @@
+<Workspace Version="1.3.1.1736" X="762.819104215588" Y="252.473020195186" zoom="0.916838962510998" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="46971c6a-25e7-45d2-903c-e4e2b02ebef0" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Data Set - Quantities of Family Types" x="-307.576671247036" y="194.4476582627" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true">
+      <PortInfo index="0" default="False" />
+      <ID value="a34f53d2-87d1-48cb-b14b-92cc223027a0" />
+      <Name value="Data Set - Quantities of Family Types" />
+      <Description value="Creates a list of family types for a category with wublists containing the family type name and quantity." />
+      <Inputs>
+        <Input value="category" />
+      </Inputs>
+      <Outputs>
+        <Output value="items" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <DSRevitNodesUI.Categories guid="9200ebde-32ac-431e-8a6b-399285c0aaa0" type="DSRevitNodesUI.Categories" nickname="Categories" x="-710.750076861136" y="197.593343176099" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="166:DuctCurves" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="bf44a2e8-50a8-4a9e-97e3-813e3ed1b730" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Generate Web Page - Google Pie Chart" x="-37.5871855595923" y="167.260132935318" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="False" />
+      <ID value="22a77bef-3e32-4b90-8669-8b3a6b788915" />
+      <Name value="Generate Web Page - Google Pie Chart" />
+      <Description value="Generates the HTML code for a web page that displays a responsive Google Pie Chart." />
+      <Inputs>
+        <Input value="options" />
+        <Input value="items" />
+      </Inputs>
+      <Outputs>
+        <Output value="html" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="38a7f144-2251-4161-b232-496ca7b85f37" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.WriteText" x="395.140380703264" y="142.868661095719" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.WriteText@string,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="405dd0fb-4007-4061-9366-4627db2cf5f9" type="CoreNodeModels.Watch" nickname="Watch" x="395.459741345854" y="268.598475826605" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.Filename guid="d7ba7899-a640-451d-91ef-d39ec29a210a" type="CoreNodeModels.Input.Filename" nickname="File Path" x="89.5630122665995" y="5.4880709151054" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>Mechanical Dashboard\Ducts.html</System.String>
+      <HintPath>C:\Users\J. Merlan\Dev Lab\BIMxNodes\BIMxHTML\Sample Files\Mechanical Dashboard\Ducts.html</HintPath>
+    </CoreNodeModels.Input.Filename>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="46971c6a-25e7-45d2-903c-e4e2b02ebef0" start_index="0" end="bf44a2e8-50a8-4a9e-97e3-813e3ed1b730" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="9200ebde-32ac-431e-8a6b-399285c0aaa0" start_index="0" end="46971c6a-25e7-45d2-903c-e4e2b02ebef0" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="bf44a2e8-50a8-4a9e-97e3-813e3ed1b730" start_index="0" end="38a7f144-2251-4161-b232-496ca7b85f37" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="bf44a2e8-50a8-4a9e-97e3-813e3ed1b730" start_index="0" end="405dd0fb-4007-4061-9366-4627db2cf5f9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d7ba7899-a640-451d-91ef-d39ec29a210a" start_index="0" end="38a7f144-2251-4161-b232-496ca7b85f37" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="9b8d2427-c00d-4614-912e-a4eeaaf6e1bc" annotationText="Package: BIMxHTML" left="-317.576671247036" top="164.4476582627" width="259.5" height="123" fontSize="14" InitialTop="194.4476582627" InitialHeight="123" TextblockHeight="20" backgrouund="#FFFFAA45">
+      <Models ModelGuid="46971c6a-25e7-45d2-903c-e4e2b02ebef0" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="278b9c35-c90a-42e4-9def-e66056a55aa8" annotationText="Package: BIMxHTML" left="-47.5871855595923" top="137.260132935318" width="268.5" height="149" fontSize="14" InitialTop="167.260132935318" InitialHeight="149" TextblockHeight="20" backgrouund="#FFFFAA45">
+      <Models ModelGuid="bf44a2e8-50a8-4a9e-97e3-813e3ed1b730" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

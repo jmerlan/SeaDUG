@@ -1,26 +1,9 @@
-# Agenda: September 2017
+# Seattle Dynamo User Group September 2017
 
-## Introduction
-- Dynamo User Group founded in Feb 2017
-    - Over 100 members on Meetup.
-    - Member-driven
-    - Open to recommendations on presentations, format, venue, etc.
+## Summary
+The samples included in this folder were used in the presentation by Jay Merlan at the SeaDUG meetup for September 2017. These sample files use the BIMxDB and BIMxHTML custom nodes to create bar and pie charts using the Google Charts API. Ultimately, the final product could be a dashboard using the Twitter Bootstrap framework.
 
-## Thank you’s
-- Last Month
-    - LMN and Anastasia Krasnoslob­odtseva
-    - Trent Best
-        - Dynamo graphs uploaded to GitHub: https://github.com/jmerlan/SeaDUG/tree/master/2017-08%20-%20Trent%20Best
-- This month
-    - Stantec
-    - Ben Fitch
-
-## News
-- Looking for another organizer
-    - Congrats to Laurenwho was promoted to PM, however too busy to help with SeaDUG
-- Ideas for a permanent venue?
-- Idea: Monthly beginner training sessions
-    - Lesson learned from LMN in August, ~ 60 attendees, 90% beginners
-
-## Presentation
-- HTML and database generation - Jay Merlan
+## More Info
+- http://bimextension.com/bimxdb-v0-0-2-published-store-revit-data-in-an-sqlite-database/
+- http://bimextension.com/bimxhtml-v0-0-8-more-custom-nodes-to-generate-google-charts/
+- http://bimextension.com/bimxhtml-dynamo-html-web-page/

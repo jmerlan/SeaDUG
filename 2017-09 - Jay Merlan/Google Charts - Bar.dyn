@@ -1,0 +1,56 @@
+<Workspace Version="1.3.1.1736" X="575.381942966653" Y="-16.9498387847603" zoom="0.971826874798006" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="4f399d39-5737-4cd3-9845-93cccb6f1fff" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Data Set - Quantities of Family Types" x="-132.985431446181" y="345.091965669139" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true">
+      <PortInfo index="0" default="False" />
+      <ID value="a34f53d2-87d1-48cb-b14b-92cc223027a0" />
+      <Name value="Data Set - Quantities of Family Types" />
+      <Description value="Creates a list of family types for a category with wublists containing the family type name and quantity." />
+      <Inputs>
+        <Input value="category" />
+      </Inputs>
+      <Outputs>
+        <Output value="items" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <DSRevitNodesUI.Categories guid="3b673b85-37c9-4617-86db-7699f2de5439" type="DSRevitNodesUI.Categories" nickname="Categories" x="-338.373219367856" y="343.279720481595" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="5:DuctTerminal" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="18aeb736-80c5-42cb-8f5e-e6675b4d6791" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Generate Web Page - Google Bar Chart" x="276.93653315473" y="335.569743655975" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="False" />
+      <ID value="d2c71456-6d9d-4636-8577-af32b9b098ac" />
+      <Name value="Generate Web Page - Google Bar Chart" />
+      <Description value="Generate HTML code for a web page to display a bar chart using Google Charts." />
+      <Inputs>
+        <Input value="options" />
+        <Input value="items" />
+      </Inputs>
+      <Outputs>
+        <Output value="html" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Watch guid="c6552124-265b-4de8-abdd-a7f37990c37f" type="CoreNodeModels.Watch" nickname="Watch" x="653.033507736581" y="338.045391310794" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7f911c98-6d71-4420-97c1-d8c32e67b829" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.WriteText" x="663.286313777398" y="96.7328899256563" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.WriteText@string,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.Filename guid="a4486bd5-7c05-4bb3-8876-2dea42bb14f0" type="CoreNodeModels.Input.Filename" nickname="File Path" x="210.700021591488" y="72.1939504961417" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>Mechanical Dashboard\Air Terminals.html</System.String>
+      <HintPath>C:\Users\J. Merlan\Dev Lab\BIMxNodes\BIMxHTML\Sample Files\Mechanical Dashboard\Air Terminals.html</HintPath>
+    </CoreNodeModels.Input.Filename>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="4f399d39-5737-4cd3-9845-93cccb6f1fff" start_index="0" end="18aeb736-80c5-42cb-8f5e-e6675b4d6791" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3b673b85-37c9-4617-86db-7699f2de5439" start_index="0" end="4f399d39-5737-4cd3-9845-93cccb6f1fff" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="18aeb736-80c5-42cb-8f5e-e6675b4d6791" start_index="0" end="c6552124-265b-4de8-abdd-a7f37990c37f" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="18aeb736-80c5-42cb-8f5e-e6675b4d6791" start_index="0" end="7f911c98-6d71-4420-97c1-d8c32e67b829" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a4486bd5-7c05-4bb3-8876-2dea42bb14f0" start_index="0" end="7f911c98-6d71-4420-97c1-d8c32e67b829" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
