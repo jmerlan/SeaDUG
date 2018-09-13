@@ -1,0 +1,8 @@
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\bin\Release\ZGFRenumberViews.dll
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\bin\Release\ZGFRenumberViews.pdb
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\obj\Release\ZGF.ChooseNumberingPattern.resources
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\obj\Release\ZGF.Properties.Resources.resources
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\obj\Release\ZGF Renumber Views.csproj.GenerateResource.cache
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\obj\Release\ZGF Renumber Views.csproj.CoreCompileInputs.cache
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\obj\Release\ZGFRenumberViews.dll
+C:\Users\trevor.taylor\OneDrive\ZGF\Ideate Presentation - SF 2018\ZGF Renumber Views\obj\Release\ZGFRenumberViews.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>ZGFRenumberViews.dll</Assembly>
+    <ClientId>B2BDD4FB-710F-45A2-8FD1-390FF269DD72</ClientId>
+    <FullClassName>ZGF.RenumberViewsUI</FullClassName>
+    <Text>Renumber Views on Sheet</Text>
+	<VendorId>ZGFA</VendorId>
+	<VendorDescription>ZGF Architects LLP</VendorDescription>
+    <Description>Renumber viewports on a sheet by various sorting directions</Description>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+  </AddIn>
+ 
+
+
+</RevitAddIns>
+
